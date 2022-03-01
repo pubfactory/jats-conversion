@@ -34,11 +34,11 @@
     <build>
         <resources>
             <resource>
-                <targetPath>PeerJ</targetPath>
+                <targetPath>PeerJ/src</targetPath>
                 <directory>src</directory>
             </resource>
             <resource>
-                <targetPath>PeerJ</targetPath>
+                <targetPath>PeerJ/schema</targetPath>
                 <directory>schema</directory>
             </resource>
         </resources>
