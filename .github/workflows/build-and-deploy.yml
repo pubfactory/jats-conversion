@@ -14,6 +14,10 @@ on:
 jobs:
   test:
     uses: pubfactory/prime-github-actions/.github/workflows/maven-unit-test.yml@main
+    with:
+      push-to-nexus: true
+      create-jacoco-badge: false
+      commit-jacoco-badge: false
     secrets:
       MAVEN_SETTINGS: ${{ secrets.MAVEN_SETTINGS }}
       SLACK_WEBHOOK: ${{ secrets.SLACK_PRIME_ROOM_WEBHOOK }}
