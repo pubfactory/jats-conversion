@@ -1,0 +1,22 @@
+# This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Test, Build, and Deploy
+
+concurrency: $GITHUB_REPOSITORY-$GITHUB_REF_NAME
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+  push:
+    branches: [ master ]
+
+jobs:
+  test:
+    needs: [update-dependencies]
+    uses: pubfactory/prime-github-actions/.github/workflows/maven-unit-test.yml@main
+    secrets:
+      MAVEN_SETTINGS: ${{ secrets.MAVEN_SETTINGS }}
+      SLACK_WEBHOOK: ${{ secrets.SLACK_PRIME_ROOM_WEBHOOK }}
+      JAVA_DISTRIBUTION: ${{ secrets.JAVA_DISTRIBUTION }}
+      JAVA_VERSION: ${{ secrets.JAVA_VERSION }}
