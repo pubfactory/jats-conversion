@@ -13,7 +13,6 @@ on:
 
 jobs:
   test:
-    needs: [update-dependencies]
     uses: pubfactory/prime-github-actions/.github/workflows/maven-unit-test.yml@main
     secrets:
       MAVEN_SETTINGS: ${{ secrets.MAVEN_SETTINGS }}
