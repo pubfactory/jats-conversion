@@ -73,18 +73,6 @@
                     <generateGitPropertiesFilename>${project.build.outputDirectory}/git-properties/${project.artifactId}/git.properties</generateGitPropertiesFilename>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.2.2</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
         <finalName>${project.artifactId}-${project.version}-${git.commit.id.describe-short}</finalName>
     </build>
