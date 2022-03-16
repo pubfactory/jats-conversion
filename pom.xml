@@ -34,7 +34,7 @@
     <build>
         <resources>
             <resource>
-                <targetPath>PeerJ/src</targetPath>
+                <targetPath>PeerJ/</targetPath>
                 <directory>src</directory>
             </resource>
             <resource>
