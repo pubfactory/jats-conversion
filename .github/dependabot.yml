@@ -17,4 +17,4 @@ updates:
     schedule:
       interval: "daily"
     reviewers:
-      - "fage88"
+      - "billapepper"
