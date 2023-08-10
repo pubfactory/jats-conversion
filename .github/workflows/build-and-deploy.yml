@@ -13,7 +13,7 @@ on:
 
 jobs:
   test:
-    uses: pubfactory/prime-github-actions/.github/workflows/maven-unit-test.yml@main
+    uses: pubfactory/prime-github-actions/.github/workflows/maven-unit-test.yml@dev
     with:
       push-to-nexus: true
       create-jacoco-badge: false
