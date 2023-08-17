@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.pubfactory.prime.PeerJ</groupId>
     <artifactId>jats-conversion</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>dev-SNAPSHOT</version>
     <name>PeerJ jats-conversion</name>
     <description>Fork of PeerJ's jats-conversion project</description>
 
